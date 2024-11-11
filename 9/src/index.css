@@ -1,0 +1,85 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800;900&display=swap);
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.header{
+  width: 95%;
+  padding: 0px 2.5%;
+  height: 100vh;
+  background: #cccccc60;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card{
+  width: 280px;
+  height: 430px;
+  padding: 10px 1%;
+  background: #fff;
+  box-shadow: 0px 0px 10px #ccc;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.card img{
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card h3{ 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+.card h3 small{
+  font-size: 13px;
+  color: #6b6b6b;
+}
+
+.icons{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icons .icon{
+  padding: 10px;
+  border-radius: 50%;
+  background: transparent;
+  transition: 0.3s;
+  cursor: pointer;
+  font-size: 18px;
+
+  &:hover{
+    color: #fff;
+  }
+}
+
+.icon1:hover{
+  background: #0062ff;
+}
+
+.icon4:hover {
+  background: #ee4848;
+}
+
+.icon3:hover {
+  background: dodgerblue;
+}
+
+.icon2:hover {
+  background: hotpink;
+}

@@ -1,0 +1,379 @@
+@import url(https://fonts.googleapis.com/css2?family=Prata&display=swap);
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Outfit";
+}
+
+nav {
+    width: 84%;
+    height: 90px;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 8%;
+}
+
+nav img {
+    width: 150px;
+    object-fit: cover;
+}
+
+.hrefs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.hrefs a {
+    text-decoration: none;
+    color: #374151;
+    font-size: 18px;
+}
+
+.hrefs .a {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.hrefs .a::before {
+    content: "";
+    position: absolute;
+    width: 45%;
+    height: 1px;
+    background: #374151;
+    bottom: -5px;
+    transition: 0.3s;
+    opacity: 0;
+}
+
+.hrefs .a:hover::before {
+    opacity: 1;
+}
+
+.hrefs button {
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: none;
+    background: #fff;
+    box-shadow: 0px 0px 2px #ccc;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.icons span {
+    font-size: 35px;
+    cursor: pointer;
+    color: #374151;
+}
+
+header {
+    width: 84%;
+    height: auto;
+    padding: 0px 8%;
+}
+
+.flex-text-img {
+    width: 100%;
+    height: 450px;
+    border: 1.5px solid #374151;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-text-img img {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.text {
+    width: 30%;
+    height: 100%;
+    padding: 0px 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    color: #374151;
+}
+
+.text h4 {
+    font-weight: 500;
+    letter-spacing: 1px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.text h4::before {
+    content: "";
+    width: 50px;
+    height: 2px;
+    background-color: #374151;
+}
+
+.text h1 {
+    color: #414141;
+    font-family: "Prata";
+    font-size: 45px;
+    font-weight: 500;
+}
+
+.text h3 {
+    font-size: 17px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.text h3::after {
+    content: "";
+    width: 50px;
+    height: 1.5px;
+    background: #414141;
+}
+
+.collection {
+    width: 84%;
+    height: auto;
+    padding: 80px 8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: #414141;
+}
+
+.collection h2 {
+    font-size: 35px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.collection h2 span {
+    color: #6B7280;
+}
+
+.collection h2::after {
+    content: "";
+    width: 60px;
+    height: 2px;
+    background: #414141;
+}
+
+.collection p {
+    font-size: 17px;
+}
+
+flex-cards {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+}
+
+flex-cards a {
+    height: 350px;
+    text-decoration: none;
+    color: #414141;
+}
+
+flex-card {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+flex-card div {
+    width: 100%;
+    height: 80%;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+flex-card div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+flex-card div img:hover {
+    transform: scale(1.1);
+}
+
+text-div {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+text-div h5 {
+    font-weight: 500;
+    line-height: 18px;
+}
+
+.flex-Cards {
+    width: 84%;
+    height: auto;
+    padding: 0px 8%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.flex-Cards div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.subscribe {
+    width: 84%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 80px 8%;
+}
+
+.subscribe h2 {
+    color: #414141;
+    font-weight: 500;
+    font-size: 32px;
+}
+
+.subscribe p {
+    color: #828282;
+    font-size: 18px;
+}
+
+.inputs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputs input {
+    width: 400px;
+    height: 50px;
+    border: 1px solid #ccc;
+    text-indent: 15px;
+    outline: none;
+    font-size: 16px;
+}
+
+.inputs button {
+    width: 150px;
+    height: 50px;
+    background: #000;
+    color: #fff;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+}
+
+.forever{
+    width: 84%;
+    height: auto;
+    padding: 80px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: start;
+}
+
+.left{
+    width: 36%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 0px 5%;
+    color: #828282;
+}
+
+.left img{
+    width: 150px;
+    object-fit: contain;
+}
+
+.right{
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.right-company{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.right-company a{
+    text-decoration: none;
+    color: #414141;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.dev{
+    width: 100%;
+    height: 80px;
+    border-top: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dev h4{
+    font-weight: 400;
+    color: #414141;
+}

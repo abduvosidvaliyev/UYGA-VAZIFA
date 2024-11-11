@@ -1,0 +1,98 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800;900&display=swap);
+
+* {
+    font-family: 'Poppins';
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 100%;
+    height: 95vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    padding: 5vh 0px 0px 0px;
+}
+
+.container::-webkit-scrollbar{
+    background: none;
+    width: 5px;
+}
+
+.container::-webkit-scrollbar-thumb{
+    background: #414141;
+}
+
+.cards{
+    width: 70%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    row-gap: 30px;
+}
+
+.text{
+    width: 45%;
+    height: 60px;
+    padding: 10px 12px;
+    background: #363636;
+    color: #fff;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text button{
+    width: 100px;
+    height: 90%;
+    background: red;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.text h4{
+    color: #fff;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.inputs{
+    width: 450px;
+    height: 50px;
+    background: #363636;
+    border-radius: 40px;
+    padding: 10px 12px 10px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inputs input{
+    width: 60%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    font-size: 17px;
+    outline: none;
+    color: #ccc;
+}
+
+.inputs button{
+    width: 120px;
+    height: 100%;
+    background: #999999;
+    border: none;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 18px;
+}
+

@@ -1,0 +1,288 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800;900&display=swap);
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+}
+
+nav {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.inputs {
+    width: 400px;
+    height: 40px;
+    padding: 10px 15px;
+    border-radius: 30px;
+    border: 1px solid #414141;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inp {
+    width: 82%;
+    height: 100%;
+    outline: none;
+    border: none;
+    text-indent: 10px;
+    font-size: 18px;
+    transition: 0.5s;
+}
+
+.inputs button {
+    background: none;
+    border: none;
+    font-size: 18px;
+    height: 100%;
+    cursor: pointer;
+    color: #414141;
+}
+
+.bi-cart {
+    font-size: 30px;
+    transition: 0.5s;
+}
+
+.indexx {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.indexx div {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 25px;
+    left: 18px;
+    color: #fff;
+    font-size: 12px;
+    transition: 0.5s;
+}
+
+.container {
+    width: 84%;
+    height: auto;
+    padding: 80px 8%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card {
+    width: 30%;
+    height: 380px;
+    border: 1px solid #414141;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+.cardImg {
+    width: 100%;
+    height: 65%;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.cardImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+.cardImg img:hover {
+    transform: scale(1.2);
+}
+
+.card h4 {
+    font-weight: 600;
+    font-size: 18px;
+    color: #414141;
+    transition: 0.5s;
+}
+
+.card h3 {
+    font-weight: 600;
+    font-size: 19px;
+    transition: 0.5s;
+}
+
+.containerDiv {
+    width: 90%;
+    height: 35%;
+    padding: 0px 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.containerDiv button {
+    width: 60px;
+    padding: 5px;
+    background: cadetblue;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.loader {
+    width: 8px;
+    height: 40px;
+    border-radius: 4px;
+    display: block;
+    margin: 20px auto;
+    position: relative;
+    background: currentColor;
+    color: #FFF;
+    box-sizing: border-box;
+    animation: animloader 0.3s 0.3s linear infinite alternate;
+}
+
+.loader::after,
+.loader::before {
+    content: '';
+    width: 8px;
+    height: 40px;
+    border-radius: 4px;
+    background: currentColor;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20px;
+    box-sizing: border-box;
+    animation: animloader 0.3s 0.45s linear infinite alternate;
+}
+
+.loader::before {
+    left: -20px;
+    animation-delay: 0s;
+}
+
+@keyframes animloader {
+    0% {
+        height: 48px
+    }
+
+    100% {
+        height: 4px
+    }
+}
+
+.looader{
+    width: 100%;
+    height: 100vh;
+    background: #121212;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+.dark{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    position: relative;
+}
+
+.dark i{
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+.sun{
+    width: 40px;
+    height: 10px;
+    border-radius: 15px;
+    background: #626262;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 5px 5px;
+}
+
+.sun div{
+    width: 10px;
+    height: 100%;
+    background: #fff;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+body{
+    transition: 0.5s;
+}
+
+/* javascript uchun */
+
+.sun-end{
+    margin-left: 77%;
+}
+
+.darkk{
+    background: #151515;
+}
+
+.darkk .bi-cart{
+    color: #626262;
+} 
+
+.darkk .indexx div{
+    background: #626262;
+    color: #000;
+}
+
+.darkk .bi-moon{
+    color: #626262;
+}
+
+.darkk .bi-sun {
+    color: #626262;
+}
+
+.darkk input{
+    background: transparent;
+    color: #787878;
+}
+
+.darkk nav .inputs button{
+    color: #787878;
+}
+
+.darkk .card h4{
+    color: #787878;
+}
+
+.darkk .card h3{
+    color: #414141;
+}
+
+.darkk .card button{
+    background: #002e5c;
+}
+

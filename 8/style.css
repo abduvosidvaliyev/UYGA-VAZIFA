@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    width: 60%;
+    padding: 0px 20%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    column-gap: 30px;
+    row-gap: 150px;
+}
+
+.container button{
+    padding: 10px 15px;
+    background: none;
+    border-radius: 5px;
+    border: 2px solid;
+    border-color: #000 #ccc #ccc #000;
+    font-size: 15px;
+}
+
+.images{
+    width: 100%;
+    height: 100vh;
+    background: #000000e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    position: fixed;
+    transform: scale(0);
+    transition: 0.5s;
+    top: 0;
+    z-index: 1;
+}
+
+.mySwiper{
+    width: 84%;
+    height: 50%;
+    padding: 0px 8%;
+}
+
+swiper-slide{
+    width: 30%;
+    height: 100%;
+}
+
+swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.bi-x{
+    font-size: 35px;
+    color: #000;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+/* javascript uchun */
+
+.scale{
+    transform: scale(1);
+}
+
